@@ -1,0 +1,18 @@
+.buttonstyle {
+	float: right;
+    background-color: burlywood;
+}
+
+.likediv {
+	display:inline;
+	float:left;
+	margin-right :20px;
+}
+
+.backcolor {
+	background-color : #e6f2ff;
+}
+
+.floattags {
+	float:right;
+}

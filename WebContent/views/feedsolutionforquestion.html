@@ -1,0 +1,60 @@
+<div class = "container backcolor " style="color:black;">
+	<div ng-repeat ="answer in ans">
+		 <fieldset>
+ 			<legend> Question: {{answer.solutionQuestionIDFK.question}} </legend>
+ 				<div class = "modal-body row ">
+				<div class="col-md-2">
+					<div class = "likediv">
+						<a href="increaselike(answer.questionLike)" class="btn btn-info btn-lg">Like:
+							{{answer.solutionQuestionIDFK.questionLike}}
+		        		</a>
+		        	</div>
+		        </div>
+		        <div class="col-md-10">
+		        	<div>
+		        		Description:
+						{{answer.solutionQuestionIDFK.questionDescription}}
+						<br>
+						
+						Technology:
+						{{answer.solutionQuestionIDFK.questionTechnology}}
+						<br>
+						<!-- Time:
+						{{answer.solutionQuestionIDFK.questionTime}} -->
+						<br>
+		        	</div>
+ 			
+ 				</div>
+ 				
+ 			</div>	
+ 		</fieldset>
+ 			<div> <b>Solutions:</b>
+ 				<fieldset>
+ 			 		<legend>Solution no. {{answer.solutionID}}</legend>
+ 			 		<div class = "modal-body row ">
+		 			 	<div class="col-md-2">
+							<div class = "likediv">
+								<a href="increaselike(answer.solutionLike)" class="btn btn-info btn-lg">Like:
+									{{answer.solutionLike}}
+				        		</a>
+				        	</div>
+				        </div>
+			       		 
+			        	<div class="col-md-10">
+	 						Solution:
+	 						{{answer.solution}}
+	 						<br>
+	 						Like: 
+	 						{{answer.solutionLike}}
+	 						<br>
+	 						<!-- Time:
+	 						{{answer.solutionTime}}
+ 							<br> -->
+ 						</div>
+ 				</div>
+ 			</fieldset>
+ 			<br><hr>
+ 		</div>		
+ 	</div>		
+ 	<button class = "buttonstyle">Add Solution</button>
+</div>

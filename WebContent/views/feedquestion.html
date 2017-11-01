@@ -1,0 +1,40 @@
+<div class = "container backcolor" >
+	<div>
+		<button class = "buttonstyle" ng-click = AddNewQuestion();  >Ask Question</button>
+		<br>
+	</div>
+	<div ng-repeat = "datas in qa" >
+	
+		<div >
+		 <fieldset>
+ 			<legend>
+					<span><a ng-click = "getSolutionByQuestionID(datas.questionID)" >{{datas.question}}</a></span>
+			</legend>
+			<div class = "modal-body row ">
+				<div class="col-md-2">
+					<div class = "likediv">
+					Like:
+						<a ng-click = "updateQuestionLike(datas.questionLike,datas.questionID)" class="btn btn-info btn-sm icon-thumbs-up">
+							{{datas.questionLike}}
+		        		</a>
+		        	</div>
+		        </div>
+				<div class="col-md-10">
+					<div>
+						{{datas.questionDescription}}
+						<br>
+						<div  class="label label-default">{{datas.questionTechnology}}</div>
+						
+						<br>
+						<!--Time:
+						{{datas.questionTime}}
+						<br>-->
+					</div>
+				</div>
+			</div>
+			<hr>
+		 </fieldset>
+		</div>	
+		
+	</div>
+</div>
